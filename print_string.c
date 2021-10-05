@@ -1,31 +1,20 @@
 #include "main.h"
 
 /**
- * print_S - prints a string with custom formatting
- *
- * @str: string to be formatted
- * Return: number of chars printed
+ * print_string - prints a string to stdout
+ * @str: string to be printed
+ * Return: no. of characters printed on success, or 0 on failure
  */
-int print_S(char *str)
+int print_string(char *str)
 {
-	int i = 0, chars_printed = 0;
-	char c;
+	int chars_printed = 0;
 
-	while (str[i])
+	if (str == (char *)0)
+		return (print_string("(null)"));
+	while (str && str[chars_printed])
 	{
-		c = str[i];
-		if ((c > 0 && c  < 32) || c >= 127)
-		{
-			chars_printed += _putchar('\\');
-			chars_printed += _putchar('x');
-			chars_printed += _putchar('0');
-			chars_printed += print_odh('X', (unsigned int)c);
-		}
-		else
-		{
-			chars_printed += _putchar(c);
-		}
-		i++;
+		_putchar(str[chars_printed]);
+		chars_printed++;
 	}
 	return (chars_printed);
 }

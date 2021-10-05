@@ -6,6 +6,7 @@
  * @c: character
  * Return: chars_printed
  */
+
 int print_unknown_spec(char c)
 {
 	int chars_printed = 0;
