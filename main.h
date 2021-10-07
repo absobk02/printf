@@ -1,22 +1,35 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdlib.h>
 #include <unistd.h>
 #include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
+/**
+* struct steps - structure created
+* @spec: chooses a specifier from array of structure
+*
+* @f: function pointer
+*/
+typedef struct steps
+{
+char *spec;
+int (*f)(va_list arg);
+} specifier;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int print_num(long int n);
-int print_string(char *str);
-int print_binary(unsigned int num);
-int print_unknown_spec(char c);
-int print_odh(char c, unsigned int num);
-int dec_to_oct(unsigned int num);
-int dec_to_hex(char c, unsigned int num);
-int print_S(char *);
-int print_reverse(char *s);
-int print_rot13(char *c);
-int print_pointer(void *p);
+int print_char(char c);
+int converter(specifier sp[], const char *format, va_list arg);
+int print_c(va_list arg);
+int print_string(va_list arg);
+int print_percent(va_list arg);
+int print_unsigned(va_list arg);
+int print_integer(va_list arg);
+int print_HEX(va_list arg);
+int print_hex(va_list arg);
+int print_octal(va_list arg);
+int print_binary(va_list arg);
+int len_buffer(int n, int base);
 
 #endif /* MAIN_H */
