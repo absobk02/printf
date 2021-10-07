@@ -1,4 +1,4 @@
-.TH man 3 "5 October 2021" "1.0" "_printf man page"
+.TH man 3 "3 October 2021" "1.0" "_printf man page"
 .SH NAME
 _printf \- prints formatted string
 .SH SYNOPSIS

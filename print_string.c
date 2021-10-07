@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * print_string - prints a string to stdout
- * @str: string to be printed
- * Return: no. of characters printed on success, or 0 on failure
- */
+*print_string - prints string followed by a new line.
+  *@str: - pointer to char.
+  *
+  *Return: - returns int. 
+  */
+
 int print_string(char *str)
 {
 	int chars_printed = 0;
