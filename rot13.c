@@ -1,7 +1,7 @@
 #include "main.h"
-#include <stdlib.h> 
+#include <stdlib.h>
 /**
- *print_R - prints a string in rot13 
+ *print_R - prints a string in rot13
  *@R: string to print
  *
  *Return: number of chars printed

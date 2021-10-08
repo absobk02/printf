@@ -1,8 +1,8 @@
-#include "main.h" 
+#include "main.h"
 /**
- * print_hex - prints an unsigned int in hexidecimal form 
- * @n: unsigned int to print 
- * @c: flag to determine case of printing (0 = lower, 1 = upper) 
+ * print_hex - prints an unsigned int in hexidecimal form
+ * @n: unsigned int to print
+ * @c: flag to determine case of printing (0 = lower, 1 = upper)
  * Return: number of digits printed
  */
 int print_hex(unsigned int n, unsigned int c)
@@ -37,30 +37,30 @@ count++;
 return (count);
 }
 /**
- * print_x - takes an unsigned int and prints it in lowercase hex notation 
- * @x: unsigned int to print 
+ * print_x - takes an unsigned int and prints it in lowercase hex notation
+ * @x: unsigned int to print
  *
- * Return: number of digits printed 
+ * Return: number of digits printed
  */
 int print_x(va_list x)
 {
 return (print_hex(va_arg(x, unsigned int), 0));
 }
 /**
- * print_X - takes am unsigned int and prints it in uppercase hex notation 
- * @X: unsigned int to print 
+ * print_X - takes am unsigned int and prints it in uppercase hex notation
+ * @X: unsigned int to print
  *
- * Return: number of digits printed 
- * */
+ * Return: number of digits printed
+ **/
 int print_X(va_list X)
 {
 return (print_hex(va_arg(X, unsigned int), 1));
 }
 /**
- * _pow - calculates an exponent 
- * @base: base of exponent 
- * @exponent: exponent of number 
- * Return: base ^ exponent 
+ * _pow - calculates an exponent
+ * @base: base of exponent
+ * @exponent: exponent of number
+ * Return: base ^ exponent
  */
 static unsigned long _pow(unsigned int base, unsigned int exponent)
 {
@@ -73,8 +73,8 @@ ans *= base;
 return (ans);
 }
 /**
- * print_p - prints an address 
- * @p: address to print 
+ * print_p - prints an address
+ * @p: address to print
  * Return: number of characters to print
  */
 int print_p(va_list p)

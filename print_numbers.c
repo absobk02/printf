@@ -1,8 +1,8 @@
-#include "main.h" 
+#include "main.h"
 /**
- * print_i - prints an integer 
- * @i: integer to print 
- * Return: number of chars and digits printed 
+ * print_i - prints an integer
+ * @i: integer to print
+ * Return: number of chars and digits printed
  */
 int print_i(va_list i)
 {
@@ -36,10 +36,10 @@ count++;
 return (count);
 }
 /**
- * print_d - prints a decimal 
- * @d: decimal to print 
+ * print_d - prints a decimal
+ * @d: decimal to print
  *
- * Return: number of chars and digits printed 
+ * Return: number of chars and digits printed
  */
 int print_d(va_list d)
 {

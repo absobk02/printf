@@ -1,8 +1,8 @@
-#include "main.h" 
+#include "main.h"
 /**
- * print_u - prints an unsigned in in decimal notation 
- * @u: unsigned int to print 
- * Return: number of digits printed 
+ * print_u - prints an unsigned in in decimal notation
+ * @u: unsigned int to print
+ * Return: number of digits printed
  */
 int print_u(va_list u)
 {
@@ -29,9 +29,9 @@ count++;
 return (count);
 }
 /**
- * print_o - takes an unsigned int and prints it in octal notation 
- * @o: unsigned int to print 
- * Return: number of digits printed 
+ * print_o - takes an unsigned int and prints it in octal notation
+ * @o: unsigned int to print
+ * Return: number of digits printed
  */
 int print_o(va_list o)
 {
